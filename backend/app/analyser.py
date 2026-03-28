@@ -9,7 +9,7 @@ def analyze_resume(file_path):
 
 
     prompt =f""" 
-You are an expert ATS resume analyser.PermissionError
+You are an expert ATS resume analyser.
 Analyse this resume and provide:
 1.skills summary
 2.missing skills (for software / AI roles)
@@ -23,7 +23,7 @@ Resume:
 """
     
     response =client.chat.completions.create(
-        model = "got-4o-mini",
+        model = "gpt-4o-mini",
         messages=[{"role":"user","content": prompt}]
     )
 

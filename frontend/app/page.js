@@ -17,7 +17,7 @@ export default function Home(){
 
         try{
             const res =await fetch("http://localhost:5000/upload",{
-                methos: "POST",
+                method: "POST",
                 body: formData,
             });
 
