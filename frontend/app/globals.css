@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: Canvas;
+  color: CanvasText;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 720px;
+  border: 1px solid ButtonBorder;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.subtle {
+  margin: 0 0 18px;
+  color: GrayText;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0 8px;
+}
+
+.file {
+  flex: 1 1 320px;
+}
+
+.button {
+  appearance: none;
+  border: 1px solid ButtonBorder;
+  background: ButtonFace;
+  color: ButtonText;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  margin: 10px 0 0;
+  color: GrayText;
+}
+
+.result {
+  margin-top: 16px;
+  border-top: 1px solid ButtonBorder;
+  padding-top: 16px;
+}
+
+.pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 14px;
+  line-height: 1.5;
+}
